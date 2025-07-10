@@ -10,7 +10,7 @@ import Footer from "../src/Footer.jsx";
 function App() {
   return (
     <>
-      <div class={css.container}>
+      <div className={css.container}>
         <Header />
         <main>
           <Hero />

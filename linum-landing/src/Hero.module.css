@@ -1,8 +1,14 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
 .hero {
   background: linear-gradient(135deg, #e3f1df, #a8d5ba);
   padding: 100px 20px;
   text-align: center;
   color: #2f4f2f;
+  background-image: url("https://images.pexels.com/photos/30561538/pexels-photo-30561538.jpeg");
 }
 
 .hero h2 {
@@ -19,7 +25,8 @@
   margin-right: auto;
 }
 
-.btn-primary {
+button {
+  all: unset;
   background-color: #4a7c59;
   color: white;
   border: none;
@@ -31,7 +38,8 @@
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.btn-primary:hover {
+button:hover {
   background-color: #3c6547;
   box-shadow: 0 8px 20px rgba(60, 101, 71, 0.5);
+  transform: scale(1.05);
 }

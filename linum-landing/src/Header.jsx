@@ -1,10 +1,11 @@
 import css from "./Header.module.css";
+import React from "react";
 
 const Header = () => {
   return (
     <>
       <header className={css.header}>
-        <h className={css.logo}>Linum</h>
+        <h1 className={css.logo}>Linum</h1>
         <nav>
           <ul className={css.navList}>
             <li>
@@ -14,7 +15,7 @@ const Header = () => {
               <a href="#products">Продукти</a>
             </li>
             <li>
-              <a href="#contact">Контакти</a>
+              <a href="#footer">Контакти</a>
             </li>
           </ul>
         </nav>

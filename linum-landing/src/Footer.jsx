@@ -1,9 +1,10 @@
 import css from "./footer.module.css";
+import React from "react";
 
 const Footer = () => {
   return (
     <>
-      <footer className={css.footer}>
+      <footer id="footer" className={css.footer}>
         © 2025 Linum — льняні рубашки з любов'ю
       </footer>
       ;

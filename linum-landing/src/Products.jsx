@@ -1,4 +1,5 @@
 import css from "./Products.module.css";
+import React from "react";
 
 const Products = () => {
   return (

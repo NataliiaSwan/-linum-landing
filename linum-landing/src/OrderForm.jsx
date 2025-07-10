@@ -1,9 +1,10 @@
 import css from "./OrderForm.module.css";
+import React from "react";
 
 const OrderForm = () => {
   return (
     <>
-      <section id="contact" className={css.contact}>
+      <section id="orderForm" className={css.contact}>
         <h3>Зв'яжіться з нами</h3>
         <form>
           <input type="text" placeholder="Ім'я" required></input>
