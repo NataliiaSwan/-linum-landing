@@ -3,12 +3,36 @@
   margin: 0 auto;
   padding: 0 16px;
 }
-.hero {
+/* .hero {
   background: linear-gradient(135deg, #e3f1df, #a8d5ba);
   padding: 100px 20px;
   text-align: center;
   color: #2f4f2f;
   background-image: url("https://images.pexels.com/photos/30561538/pexels-photo-30561538.jpeg");
+} */
+
+.hero {
+  position: relative;
+  padding: 100px 20px;
+  text-align: center;
+  color: #fff;
+  background-image: url("https://images.pexels.com/photos/30561538/pexels-photo-30561538.jpeg");
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2); /* затемнення */
+  z-index: 1;
+}
+
+.hero * {
+  position: relative;
+  z-index: 2; /* піднімає контент над фоном */
 }
 
 .hero h2 {
