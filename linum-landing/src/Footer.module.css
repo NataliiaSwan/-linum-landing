@@ -1,4 +1,4 @@
-.footer {
+/* .footer {
   background: #4a7c59;
   color: white;
   padding: 30px 20px;
@@ -33,4 +33,50 @@
 .socialIcons a:hover {
   transform: scale(1.2);
   color: #a8d5ba;
+} */
+
+.footer {
+  background-color: #4a7c59;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contacts {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.contacts a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+}
+
+.socialIcons a {
+  color: white;
+  transition: transform 0.2s, color 0.3s;
+}
+
+.socialIcons a:hover {
+  color: #c0ffc2;
+  transform: scale(1.1);
+}
+
+.text {
+  font-size: 0.9rem;
+  opacity: 0.8;
 }
