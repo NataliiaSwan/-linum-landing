@@ -22,11 +22,13 @@ const Features = () => {
 
   return (
     <section id="features" className={css.features}>
-      <h3>Чому льняні рубашки?</h3>
+      <h3 className={css.heading}>Чому льняні рубашки?</h3>
       <div className={css.grid}>
         {featureList.map((item, index) => (
           <div className={css.card} key={index}>
-            <span className={css.emoji}>{item.emoji}</span>
+            <div className={css.iconWrapper}>
+              <span className={css.emoji}>{item.emoji}</span>
+            </div>
             <h4>{item.title}</h4>
             <p>{item.description}</p>
           </div>

@@ -1,8 +1,10 @@
 .contact {
+  background: linear-gradient(180deg, #f6faf6 0%, #eaf4ed 100%);
   padding: 60px 20px;
   max-width: 400px;
   margin: 0 auto 60px;
   text-align: center;
+  border-radius: 20px;
 }
 
 .contact h3 {

@@ -1,19 +1,80 @@
 .products {
-  background: #fff;
-  padding: 60px 20px;
-
+  background: linear-gradient(180deg, #f6faf6 0%, #eaf4ed 100%);
+  padding: 80px 20px;
+  max-width: 1400px;
   margin: 0 auto;
   text-align: center;
 }
-.listCard {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  list-style-type: none;
+
+.title {
+  font-size: 2.6rem;
+  margin-bottom: 40px;
+  color: #4a7c59;
+  font-weight: 700;
+  letter-spacing: 0.05em;
 }
 
-.products h3 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-  color: #4a7c59;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  background: #f9f9f9;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.detailBtn {
+  margin: 20px auto 30px auto;
+  background-color: #4a7c59;
+  color: white;
+  border: none;
+  padding: 14px 42px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(74, 124, 89, 0.5);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease,
+    transform 0.3s ease;
+  width: fit-content;
+  user-select: none;
+}
+
+.detailBtn:hover {
+  background-color: #3c6547;
+  box-shadow: 0 10px 30px rgba(60, 101, 71, 0.6);
+  transform: scale(1.07);
+}
+
+.detailBtn:focus {
+  outline: 3px solid #82b26f;
+  outline-offset: 2px;
 }
