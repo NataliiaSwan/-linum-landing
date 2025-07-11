@@ -1,0 +1,45 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.hero {
+  background: linear-gradient(135deg, #e3f1df, #a8d5ba);
+  padding: 100px 20px;
+  text-align: center;
+  color: #2f4f2f;
+  background-image: url("https://images.pexels.com/photos/30561538/pexels-photo-30561538.jpeg");
+}
+
+.hero h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  all: unset;
+  background-color: #4a7c59;
+  color: white;
+  border: none;
+  padding: 16px 40px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(74, 124, 89, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #3c6547;
+  box-shadow: 0 8px 20px rgba(60, 101, 71, 0.5);
+  transform: scale(1.05);
+}

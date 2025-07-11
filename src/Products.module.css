@@ -1,0 +1,19 @@
+.products {
+  background: #fff;
+  padding: 60px 20px;
+
+  margin: 0 auto;
+  text-align: center;
+}
+.listCard {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style-type: none;
+}
+
+.products h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #4a7c59;
+}
